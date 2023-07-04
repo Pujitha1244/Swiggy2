@@ -1768,5 +1768,6 @@ const resObj = [
       "subtype": "basic"
     }
   ]
+  
 
   export default resObj

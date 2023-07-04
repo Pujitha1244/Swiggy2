@@ -1,6 +1,12 @@
+import { useEffect, useState } from "react";
 import {LOGO_URL} from "../utils/contants"
 
 const Header = () => {
+  const[btnName,setBtnName] = useState("LogIn")
+
+  useEffect(()=>{
+
+  },[])
     return (
       <div className="header">
         <>
@@ -13,6 +19,9 @@ const Header = () => {
             <li className="headerList">About Us</li>
             <li className="headerList">Contact</li>
             <li className="headerList">Cart</li>
+            <button className="login" onClick={()=>{
+              btnName === "LogIn"? setBtnName("LogOut"): setBtnName("LogIn")
+            }}>{btnName}</button>
           </ul>
         </div>
       </div>
